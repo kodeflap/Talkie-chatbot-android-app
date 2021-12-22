@@ -15,11 +15,8 @@ import com.example.talkie.model.ChatModel;
 import com.example.talkie.model.MessageModel;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-import java.io.IOException;
 import java.util.ArrayList;
 
-import okhttp3.Request;
-import okio.Timeout;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -72,8 +69,8 @@ public class ChatBotActivity extends AppCompatActivity {
     {
         chatList.add(new ChatModel(message,USER_KEY));
         chatBotAdapter.notifyDataSetChanged();
-        String url = "https://api.brainshop.ai/get?bid=156451&key=RdjOJHMeR2JDdoW&uid=[uid]$msg"+message;
-        String BASE_URL = "https://api.brainshop.ai/";
+        String url = "api url="+message;
+        String BASE_URL = "api url base here";
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create())
