@@ -6,5 +6,5 @@ An android chatbox sample app build in Java
 </tr>
 </table>
 
-##License
+## License
 [MIT License](LICENSE)
